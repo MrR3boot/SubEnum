@@ -11,6 +11,10 @@ This tool will help in enumerating subdomains from Certificate Transparency Log 
 
 ![Tool Usage](https://github.com/MrR3boot/SubEnum/blob/master/gif/tool.gif)
 
+### Compatibility:
+
+Runs perfectly with Python 2.7
+
 ### Todo:
 
 * Integration with AWS-S3, DigiSpaces and Google Cloud Meta Info Gathering.
