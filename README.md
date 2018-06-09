@@ -5,3 +5,8 @@ This tool will help in enumerating subdomains from Certificate Transparency Log 
 
 ### Usage:
 
+``git clone https://github.com/MrR3boot/SubEnum.git``
+
+``cd SubEnum & ./Subcrt.py``
+
+![Tool Usage](https://github.com/MrR3boot/SubEnum/blob/master/gif/tool.gif)
