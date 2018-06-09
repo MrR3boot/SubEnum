@@ -10,3 +10,9 @@ This tool will help in enumerating subdomains from Certificate Transparency Log 
 ``cd SubEnum & ./Subcrt.py``
 
 ![Tool Usage](https://github.com/MrR3boot/SubEnum/blob/master/gif/tool.gif)
+
+### Todo:
+
+* Integration with AWS-S3, DigiSpaces and Google Cloud Meta Info Gathering.
+* Increasing scope with Google Dorking Fu, Censys and Shodan.
+* Working on prototype to fuzz the output to identify sensitive files
