@@ -28,6 +28,8 @@ if validate:
         page = urllib.urlopen('https://crt.sh?q=%25.'+domain).read()
         domains = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{,61}[a-zA-Z0-9])?\.)+com', page)
         uniqdom = set(domains)
+	count = len(uniqdom)
+	print '''%sFound %s Unique Subdomains :)'''%(IRed, count)
         print '''%sYou want me to print the results or do you want to save it for later usage ?'''%(IPurple)
         print '''%s1. %sPrint'''%(ICyan,IWhite)
         print '''%s2. %sSave to output.txt'''%(ICyan,IWhite)
