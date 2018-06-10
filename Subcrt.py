@@ -26,7 +26,7 @@ validate = validators.domain(domain)
 
 if validate:
         page = urllib.urlopen('https://crt.sh?q=%25.'+domain).read()
-        domains = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{,61}[a-zA-Z0-9])?\.)+com', page)
+        domains = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{,61}[a-zA-Z0-9])?\.)'+domain, page)
         uniqdom = set(domains)
 	count = len(uniqdom)
 	print '''%sFound %s Unique Subdomains :)'''%(IRed, count)
