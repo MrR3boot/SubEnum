@@ -40,7 +40,6 @@ if validate:
         uniqdom = set(domains)
         count = len(uniqdom)
         print '''%s\nFound %s Unique Subdomains :)\n'''%(IRed, count)
-        print '''%sYou want me to print the results or do you want to save it for later usage ?\n'''%(IPurple)
         print '''%s1. %sPrint Results'''%(ICyan,IWhite)
         print '''%s2. %sSave Results to output.txt'''%(ICyan,IWhite)
         print '''%s3. %sFind valid domains among Results\n'''%(ICyan,IWhite)
