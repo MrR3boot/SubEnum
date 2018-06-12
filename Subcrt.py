@@ -9,7 +9,7 @@ import requests
 def is_live(host, path="/"):
     try:
         conn = httplib.HTTPConnection(host)
-        conn.request("GET", path)
+        conn.request("HEAD", path)
         return conn.getresponse().status
     except StandardError:
         return None
@@ -26,10 +26,10 @@ print '''\n%sCollects Subdomains from %s crt.sh %s\n
             >(%s:%sinit 6%s:%s)<\n
                /    \\\n
                 |  |\n
-              MrR3boot\n'''%(ICyan,IGreen,ICyan,IWhite,IRed,IWhite,ICyan)
+              %sMr%sR%s3%sboot\n'''%(ICyan,IGreen,ICyan,IWhite,IRed,IWhite,ICyan,IWhite,IWhite,IRed,IWhite)
 
 #Reading input from user
-domain = raw_input( "\nGive me a domain to start with: ")
+domain = raw_input( "\n\033[0;96mGive me a domain to start with: \033[0;97m")
 
 #Domain Validation
 validate = validators.domain(domain)
@@ -61,7 +61,7 @@ if validate:
                 for array in arraydom:
                         if str(is_live(array)) != "None":
                                 code = str(is_live(array))
+                                response = httplib.responses[is_live(array)]
                                 print array
-
 else:
         print '''%sDo you think this is a valid Domain to look for ?'''%(IRed)
