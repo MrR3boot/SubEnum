@@ -11,7 +11,7 @@ This tool will help in enumerating subdomains from Certificate Transparency Log 
 
 ``cd SubEnum & ./Subcrt.py``
 
-![Tool Usage](https://github.com/MrR3boot/SubEnum/blob/master/gif/tool.gif)
+![Tool Usage](https://github.com/MrR3boot/SubEnum/blob/master/tool.gif)
 
 ### Compatibility:
 
